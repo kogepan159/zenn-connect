@@ -1,5 +1,24 @@
 {
   "dependencies": {
-    "zenn-cli": "^0.1.159"
-  }
+    "zenn-cli": "^0.1.162"
+  },
+  "name": "zenn-connect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kogepan159/zenn-connect.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kogepan159/zenn-connect/issues"
+  },
+  "homepage": "https://github.com/kogepan159/zenn-connect#readme"
 }
