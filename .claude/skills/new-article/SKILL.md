@@ -31,7 +31,7 @@ Zennに投稿する新しい記事の執筆を開始するためのスキルで�
 5. **記事ファイルをスキャフォールド**
    - `npx zenn new:article` でファイルを生成する。スラッグはZenn側のランダム生成に任せ、指定しない（既存記事の命名規則に合わせるため）。
      ```bash
-     npx zenn new:article --title "<タイトル>" --type tech --emoji "📝" --published false --machine-readable
+     npx zenn new:article --title "<タイトル>" --type tech --emoji "📝" --published true --machine-readable
      ```
    - 内容が明らかに技術記事でなくアイデア・意見寄りであれば `--type idea` にする。emojiは内容に合わせて変えてよい。
    - `--machine-readable` の出力から生成されたファイルパスを取得する。
@@ -53,5 +53,5 @@ Zennに投稿する新しい記事の執筆を開始するためのスキルで�
 ## 注意事項
 
 - 既存記事ファイルのリネームやスラッグの変更は絶対に行わない（Zennの公開URLが壊れるため）。
-- このskill内で生成する記事は常に `published: false` にする（`true` でデフォルトブランチにpushすると即座に公開されるため）。
+- このskill内で生成する記事は `published: true` にする。デフォルトブランチにマージ・pushすると即座に公開されるため、その点はユーザーに認識してもらったうえで進める。
 - コミット・pushはユーザーから明示的に依頼されない限り行わない。
